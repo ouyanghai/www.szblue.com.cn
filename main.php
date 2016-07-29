@@ -119,7 +119,9 @@ $arr = array('mingxing','dianshi','dianying','zongyi','baoliao','pandian');
 			<?php } ?>
 		</div>
 	    <div class="area-sub">
-	        <div class="ad ad-sub ad-h250" style="height:250px;"><script src="http://www.huabian.com/hb/ad/show_right1.js"></script></div>
+	        <div class="ad ad-sub ad-h250" style="height:250px;">
+	        	<img src="./statics/images/guang.gif">
+	        </div>
 			<div class="box05_right clear">
 				<div class="top_box">
 					<h3>娱乐<span>扒一扒</span></h3>
@@ -156,9 +158,9 @@ $arr = array('mingxing','dianshi','dianying','zongyi','baoliao','pandian');
 							$type=$arr[$i];
 							$res = '';
 							if($i==0){
-								$res=$res=mysql_query("select * from `tg_bagua` where is_pic=1 order by time desc limit 6");	
+								$res=$res=mysql_query("select * from `tg_bagua` where is_pic=1 order by time desc limit 5");	
 							}else{
-								$res=mysql_query("select * from `tg_bagua` where is_pic=1 and type={$type} order by time desc limit 6");
+								$res=mysql_query("select * from `tg_bagua` where is_pic=1 and type={$type} order by time desc limit 5");
 							}
 							
 					?>

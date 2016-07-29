@@ -1,4 +1,4 @@
-<?php include("/header.php"); ?>
+<?php include("./header.php"); ?>
 <link rel="stylesheet" type="text/css" href="/statics/css/show.css">
 <?php 
 $type = !empty($_GET['type'])?$_GET['type']:'';
@@ -16,4 +16,4 @@ $content = mysql_fetch_assoc($res);
 		<?php echo $content['content']; ?>
 	</div>
 </div>
-<?php include("/footer.php"); ?>
+<?php include("./footer.php"); ?>

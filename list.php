@@ -1,7 +1,7 @@
 <?php 
 //1 内容也去掉时间，来源等
 //2 内容抓取是去掉center标签
-include("/header.php"); 
+include("./header.php"); 
 
 mysql_query("delete from `tg_bagua` where title=''");
 
@@ -72,4 +72,4 @@ if(mysql_num_rows($pres)){
 		<!--新闻模块分类 end-->
 	</div>
 </div>
-<?php include("/footer.php"); ?>
+<?php include("./footer.php"); ?>
